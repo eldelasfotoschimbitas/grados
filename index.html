@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El de las Fotos Chimbitas — Paquetes de Grados</title>
+<meta name="description" content="Paquetes de fotografía para grados: pre-grado, ceremonia, impresiones y retablo. Valor por persona, grupos de +20. Precios 2026.">
+<meta property="og:title" content="El de las Fotos Chimbitas — Paquetes de Grados">
+<meta property="og:description" content="Fotografía de graduaciones: pre-grado, ceremonia, impresiones y retablo. Mira los paquetes y reserva por WhatsApp.">
+<meta property="og:image" content="https://eldelasfotoschimbitas.github.io/grados/img/grados.jpg">
+<meta property="og:url" content="https://eldelasfotoschimbitas.github.io/grados/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://eldelasfotoschimbitas.github.io/grados/img/grados.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600&family=Montserrat:wght@400;600;700&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --vino:#1c060a; --vino2:#3d0a12; --vino3:#57101b;
+  --oro:#e9b949; --oro2:#c9992e;
+  --crema:#f5ede4; --gris:#b9a9a9;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--vino);color:var(--crema);font-family:'Montserrat',sans-serif;overflow-x:hidden}
+body.lock{overflow:hidden}
+
+/* ---------- INTRO ---------- */
+#intro{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  background:radial-gradient(120% 90% at 50% 35%, var(--vino3) 0%, var(--vino2) 45%, #120405 70%, #0d0305 100%);
+  background-color:var(--vino);transition:transform 1s cubic-bezier(.7,0,.3,1);cursor:pointer}
+#intro.up{transform:translateY(-101%)}
+.in-script{font-family:'WindSong',cursive;font-weight:500;font-size:clamp(2.6rem,9vw,5.2rem);line-height:1.25;
+  color:var(--crema);text-shadow:0 0 22px rgba(233,185,73,.25),0 2px 14px rgba(0,0,0,.55);
+  opacity:0;filter:blur(10px);transform:translateY(18px) scale(.97);padding:0 .5em}
+#intro.play .in-script{animation:inScript 1.15s .25s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes inScript{to{opacity:1;filter:blur(0);transform:none}}
+.in-line{width:0;height:1px;background:linear-gradient(90deg,transparent,var(--oro),transparent);margin:1.1rem 0}
+#intro.play .in-line{animation:inLine .8s 1.15s ease forwards}
+@keyframes inLine{to{width:min(62vw,340px)}}
+.in-caps{font-family:'Raleway',sans-serif;font-weight:300;letter-spacing:.65em;text-indent:.65em;color:var(--oro);
+  font-size:clamp(.8rem,3vw,1.05rem);text-transform:uppercase;opacity:0;transform:translateY(10px)}
+#intro.play .in-caps{animation:inCaps .8s 1.5s ease forwards}
+@keyframes inCaps{to{opacity:1;transform:none}}
+.in-sub{font-family:'Bodoni Moda',serif;font-size:clamp(1.15rem,4.8vw,1.8rem);color:var(--crema);margin-top:1.6rem;
+  opacity:0;transform:translateY(12px);text-align:center;padding:0 1rem}
+#intro.play .in-sub{animation:inCaps .9s 2.05s ease forwards}
+.in-hint{position:absolute;bottom:2rem;font-size:.65rem;letter-spacing:.3em;color:var(--gris);opacity:0;text-transform:uppercase}
+#intro.play .in-hint{animation:inCaps 1s 2.9s ease forwards}
+
+/* ---------- HERO ---------- */
+header{position:relative;min-height:64vh;display:flex;flex-direction:column;justify-content:flex-end;
+  background:linear-gradient(180deg,rgba(28,6,10,.25) 0%,rgba(28,6,10,.55) 55%,var(--vino) 100%),url('img/grados.jpg') center 28%/cover no-repeat}
+.hero-in{padding:0 1.4rem 2.6rem;max-width:1080px;margin:0 auto;width:100%}
+.hero-script{font-family:'WindSong',cursive;font-weight:500;font-size:clamp(2.2rem,7vw,3.6rem);line-height:1.3}
+.hero-caps{font-family:'Raleway',sans-serif;letter-spacing:.5em;text-transform:uppercase;color:var(--oro);font-size:clamp(.7rem,2.6vw,.9rem);margin-top:.4rem}
+.hero-sub{color:var(--gris);font-size:.85rem;margin-top:1rem;max-width:34em}
+
+/* ---------- SECCIONES ---------- */
+main{max-width:1080px;margin:0 auto;padding:0 1.2rem 4rem}
+.sec-t{font-family:'Bodoni Moda',serif;font-size:clamp(1.9rem,6vw,2.8rem);margin:3.2rem 0 .4rem;text-align:center}
+.sec-s{text-align:center;color:var(--gris);font-size:.8rem;letter-spacing:.35em;text-transform:uppercase;margin-bottom:2rem}
+.grid{display:grid;gap:1.6rem;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+
+/* ---------- CARDS ---------- */
+.card{background:linear-gradient(180deg,var(--vino2),#26070d);border:1px solid rgba(233,185,73,.14);border-radius:18px;
+  overflow:hidden;display:flex;flex-direction:column;opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.card.show{opacity:1;transform:none}
+.card-img{position:relative;aspect-ratio:4/3.1;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;object-position:var(--pos,center 22%);display:block;transform:scale(1.02);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.card:hover .card-img img{transform:scale(1.2)}
+.card-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(28,6,10,.92) 100%)}
+.badge{position:absolute;top:.9rem;right:.9rem;z-index:2;background:#120305;color:var(--oro);border:1px solid var(--oro2);
+  font-weight:700;font-size:.78rem;padding:.35rem .6rem;border-radius:999px;letter-spacing:.05em}
+.card-head{position:absolute;left:1.1rem;bottom:.8rem;z-index:2}
+.card-tag{font-family:'Raleway',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--oro);margin-bottom:.25rem}
+.card-name{font-family:'Bodoni Moda',serif;font-size:1.45rem}
+.card-body{padding:1.1rem 1.2rem 1.4rem;display:flex;flex-direction:column;gap:.9rem;flex:1}
+.inc{list-style:none;display:flex;flex-direction:column;gap:.42rem;font-size:.82rem;color:#d9c9c2}
+.inc li::before{content:"•";color:var(--oro);margin-right:.55em}
+.strike{color:var(--gris);font-size:.95rem;text-decoration:line-through;text-decoration-thickness:1.5px}
+.price{font-family:'WindSong',cursive;font-weight:500;font-size:2.35rem;line-height:1.15;text-shadow:0 0 16px rgba(233,185,73,.18)}
+.per{font-size:.7rem;color:var(--gris);letter-spacing:.15em;text-transform:uppercase}
+.cta-row{display:flex;gap:.6rem;margin-top:auto}
+.btn{flex:1;text-align:center;text-decoration:none;font-weight:600;font-size:.8rem;padding:.72rem .5rem;border-radius:999px;transition:filter .2s}
+.btn-wa{background:linear-gradient(135deg,var(--oro),var(--oro2));color:#26070d}
+.btn-pdf{border:1px solid rgba(233,185,73,.5);color:var(--oro)}
+.btn:hover{filter:brightness(1.12)}
+
+/* ---------- FOOTER ---------- */
+footer{border-top:1px solid rgba(233,185,73,.15);padding:2.6rem 1.4rem 6.5rem;text-align:center}
+.f-script{font-family:'WindSong',cursive;font-size:2rem;margin-bottom:.6rem}
+footer a{color:var(--oro);text-decoration:none}
+.f-links{display:flex;gap:1.6rem;justify-content:center;margin-top:1rem;font-size:.85rem;flex-wrap:wrap}
+.wa-fab{position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;display:flex;align-items:center;gap:.55rem;
+  background:linear-gradient(135deg,#27d366,#12a94c);color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;
+  padding:.8rem 1.15rem;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.wa-fab img{width:1.35em;height:1.35em;display:block}
+.nota{max-width:640px;margin:2.4rem auto 0;text-align:center;color:var(--gris);font-size:.75rem;line-height:1.6}
+.mas-servicios{margin:3rem auto 0;text-align:center}
+.mas-servicios p{color:var(--gris);font-size:.9rem;margin-bottom:.5rem}
+.mas-servicios a{display:inline-block;color:var(--oro);text-decoration:none;font-weight:600;font-size:1rem;
+  border:1px solid rgba(233,185,73,.5);border-radius:999px;padding:.8rem 1.6rem;transition:filter .2s}
+.mas-servicios a:hover{filter:brightness(1.2)}
+@media (prefers-reduced-motion: reduce){
+  #intro{display:none}
+  .card{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body class="lock">
+
+<div id="intro" aria-hidden="true">
+  <div class="in-script">El de las Fotos</div>
+  <div class="in-line"></div>
+  <div class="in-caps">Chimbitas</div>
+  <div class="in-sub">Paquetes de Grados</div>
+  <div class="in-hint">toca para entrar</div>
+</div>
+
+<header>
+  <div class="hero-in">
+    <div class="hero-script">Paquetes de Grados</div>
+    <div class="hero-caps">El de las Fotos &nbsp;·&nbsp; Chimbitas</div>
+    <p class="hero-sub">Pre-grado, ceremonia, impresiones y retablo. Mira los paquetes, descarga el PDF y reserva tu fecha por WhatsApp.</p>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2 class="sec-t">Graduaciones</h2>
+    <p class="sec-s">Pre-grado y ceremonia · valor por persona</p>
+    <div class="grid" id="g4"></div>
+  </section>
+
+  <p class="nota">Para garantizar tu fecha se abona el 40% del valor contratado al momento de la reserva. Precios por persona para grupos de +20 graduandos.</p>
+
+  <div class="mas-servicios">
+    <p>¿Buscas otros paquetes?</p>
+    <a href="https://eldelasfotoschimbitas.github.io/">Ver todos los paquetes →</a>
+  </div>
+</main>
+
+<footer>
+  <div class="f-script">El de las Fotos</div>
+  <div style="letter-spacing:.5em;text-transform:uppercase;font-size:.7rem;color:var(--oro)">Chimbitas</div>
+  <div class="f-links">
+    <a href="https://www.instagram.com/eldelasfotoschimbitas" target="_blank" rel="noopener">@eldelasfotoschimbitas</a>
+    <a href="https://wa.me/573133469261">+57 313 346 9261</a>
+  </div>
+</footer>
+
+<a class="wa-fab" id="wafab" href="https://wa.me/573133469261?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20paquetes%20de%20grados%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener"><img src="img/wa.webp?v=1" alt="WhatsApp"> Reservar</a>
+
+<script>
+const WA = "https://wa.me/573133469261?text=";
+const P = [
+ {img:"img/grad_nino.jpg", name:"Grado Digital", cat:"Pre-grado y evento", badge:null, strike:null, price:"$ 70.000", per:"por persona · grupos de +20",
+  inc:["7 fotos digitales (pre-grado, evento y grupales)","Entrega digital lista para imprimir"],
+  pdf:"pdf/Grados_Digital.pdf?v=10"},
+ {img:"img/grad_verde.jpg", name:"Grado con Impresiones", cat:"Pre-grado y evento", badge:null, strike:null, price:"$ 80.000", per:"por persona · grupos de +20",
+  inc:["7 fotos digitales","1 impresa 10×15 cm + 1 impresa 20×30 cm"],
+  pdf:"pdf/Grados_Impresiones.pdf?v=10"},
+ {img:"img/grad95.jpg", name:"Grado con Retablo", cat:"Pre-grado y evento", badge:null, strike:null, price:"$ 105.000", per:"por persona · grupos de +20",
+  inc:["7 fotos digitales","Retablo 30×40 cm listo para colgar"],
+  pdf:"pdf/Grados_Retablo.pdf?v=10"},
+ {img:"img/grad100.jpg", name:"Grado Completo", cat:"Pre-grado y evento", badge:null, strike:null, price:"$ 110.000", per:"por persona · grupos de +20",
+  inc:["7 fotos digitales","Retablo 30×40 cm","Impresiones 15×10 y 15×20 cm"],
+  pdf:"pdf/Grados_Completo.pdf?v=10"},
+ {img:"img/gradbuc2.jpg", name:"Grados Bucaramanga", cat:"Solo fotografía", badge:null, strike:null, price:"$ 120.000", per:"por persona · grupos de +20",
+  inc:["7 fotografías editadas en digital","Cobertura de la ceremonia","Fotos antes o después, con calma"],
+  pdf:"pdf/Grados_Bucaramanga.pdf?v=10"},
+];
+// ordenar de menor a mayor precio
+const priceNum = s => parseInt(String(s).replace(/[^\d]/g, ""), 10) || 0;
+P.sort((a, b) => priceNum(a.price) - priceNum(b.price));
+const grid = document.getElementById("g4");
+for (const p of P){
+  const el = document.createElement("article");
+  el.className = "card";
+  el.innerHTML = `
+    <div class="card-img">
+      ${p.badge ? `<span class="badge">${p.badge}</span>` : ""}
+      <img src="${p.img}" alt="${p.name}" loading="lazy"${p.pos ? ` style="--pos:${p.pos}"` : ""}>
+      <div class="card-head">
+        ${p.cat ? `<div class="card-tag">${p.cat}</div>` : ""}
+        <h3 class="card-name">${p.name}</h3>
+      </div>
+    </div>
+    <div class="card-body">
+      <ul class="inc">${p.inc.map(i=>`<li>${i}</li>`).join("")}</ul>
+      <div>
+        ${p.strike ? `<div class="strike">${p.strike}</div>` : ""}
+        <div class="price">${p.price}</div>
+        ${p.per ? `<div class="per">${p.per}</div>` : ""}
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-wa" target="_blank" rel="noopener" href="${WA + encodeURIComponent("Hola, quiero información del " + p.name + ".")}">Reservar</a>
+        ${p.pdf ? `<a class="btn btn-pdf" target="_blank" rel="noopener" href="${p.pdf}">Ver PDF</a>` : ""}
+      </div>
+    </div>`;
+  grid.appendChild(el);
+}
+// reveal on scroll
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".card").forEach(c=>io.observe(c));
+
+// intro
+const intro = document.getElementById("intro");
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function endIntro(){
+  if (!intro || intro.classList.contains("up")) return;
+  intro.classList.add("up");
+  document.body.classList.remove("lock");
+  setTimeout(()=>intro.remove(), 1100);
+}
+if (reduced){ document.body.classList.remove("lock"); }
+else {
+  requestAnimationFrame(()=>intro.classList.add("play"));
+  intro.addEventListener("click", endIntro);
+  setTimeout(endIntro, 4000);
+}
+</script>
+</body>
+</html>
